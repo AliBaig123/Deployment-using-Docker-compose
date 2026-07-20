@@ -38,7 +38,5 @@ After Delete:
  #### Dependency Management Tool
   + Maven
  
- #### IDE
-  + Intellij-Idea 
 
 
