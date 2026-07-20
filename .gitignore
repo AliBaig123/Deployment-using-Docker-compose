@@ -1,0 +1,14 @@
+# Environment variables
+docker/.env
+
+# Maven
+target/
+*.jar
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
