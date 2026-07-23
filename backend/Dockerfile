@@ -11,7 +11,6 @@ COPY src ./src
 
 RUN mvn clean package -DskipTests
 
-
 # ==========================
 # Stage 2: Run Application
 # ==========================
