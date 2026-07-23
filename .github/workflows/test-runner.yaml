@@ -1,0 +1,29 @@
+name: Test ARC Runner
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  test-runner:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Verify Runner
+        run: |
+          echo "Hello from ARC Runner!"
+          echo "Runner Hostname:"
+          hostname
+          echo "Current User:"
+          whoami
+          echo "Current Directory:"
+          pwd
+
+      - name: Show System Info
+        run: |
+          uname -a
